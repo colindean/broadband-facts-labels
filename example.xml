@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!--
+<?xml-stylesheet type="text/xsl" href="broadband_facts_label.xsl"?>
+-->
+<broadband-facts currency="$" currency-placement="before">
+  <company>
+    <name>Acme Wired</name>
+    <support>
+      <phone>+1 (555) 555-5555</phone>
+      <website>https://www.example.com</website>
+    </support>
+    <policy>
+      <name>Network Management Policy</name>
+      <website>https://www.example.com/network-management</website>
+    </policy>
+    <policy>
+      <name>Privacy Policy</name>
+      <website>https://www.example.com/network-management</website>
+    </policy>
+  </company>
+  <plan>
+    <identifier>F0005937974123ABC456EMC789</identifier>
+    <name>Signature Plan/Gigabit</name>
+    <modality>Fixed Broadband</modality>
+    <pricing>
+      <price>
+        <period types="contract introductory" duration="month">12</period>
+        <rate>89.99</rate>
+      </price>
+      <price>
+        <period types="contract" duration="month">12</period>
+        <rate>109.99</rate>
+      </price>
+    </pricing>
+    <!-- TODO: total periods to calculate Length of Contract -->
+
+    <services>
+      <service>
+        <name>Modem Rental</name>
+        <!-- included in monthly rate, optionally available -->
+        <choice included="yes" optional="yes"/>
+        <rate period="monthly">10.00</rate>
+      </service>
+      <service>
+        <name>WiFi Extender</name>
+        <choice included="no" optional="yes"/>
+        <rate period="monthly">5.00</rate>
+      </service>
+      <service>
+        <name>Installation</name>
+        <choice included="no" optional="no"/>
+        <rate period="onetime">100.00</rate>
+      </service>
+      <service>
+        <name>Battery Backup</name>
+        <choice included="no" optional="yes"/>
+        <rate period="onetime">50.00</rate>
+      </service>
+      <service>
+        <name>Early Termination Fee</name>
+        <choice included="no" optional="no"/>
+        <rate period="onetime">75.00</rate>
+      </service>
+      <service>
+        <name>Government Taxes</name>
+        <choice included="yes" optional="no"/>
+        <rate period="monthly">100.00</rate>
+      </service>
+    </services>
+    <discounts label="Discounts &amp; Bundles">
+      <text format="text/html">
+        <p>
+          Visit the link below for available billing discounts and pricing options for broadband service
+          bundled with other services like video, phone, and wireless service, and use of your own equipment
+          like modems and routers.
+        </p>
+      </text>
+    </discounts>
+    <metrics>
+      <download unit="Mbps">1200</download>
+      <upload unit="Mbps">200</upload>
+      <latency unit="ms">47</latency>
+      <!-- TODO: can we include source and destination data for the ping and throughput tests? -->
+    </metrics>
+  </plan>
+</broadband-facts>
