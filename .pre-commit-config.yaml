@@ -1,16 +1,17 @@
-- repo: 'https://github.com/pre-commit/pre-commit-hooks'
-  rev: v4.6.0
-  hooks:
-    - id: trailing-whitespace
-    - id: check-xml
-    - id: check-added-large-files
-    - id: check-case-conflict
-    - id: check-executables-have-shebangs
-    - id: check-merge-conflict
-    - id: check-yaml
-    - id: end-of-file-fixer
-    - id: forbid-submodules
-- repo: 'https://github.com/comkieffer/pre-commit-xmllint.git'
-  rev: 1.0.0
-  hooks:
-    - id: xmllint
+repos:
+  - repo: 'https://github.com/pre-commit/pre-commit-hooks'
+    rev: v4.6.0
+    hooks:
+      - id: trailing-whitespace
+      - id: check-xml
+      - id: check-added-large-files
+      - id: check-case-conflict
+      - id: check-executables-have-shebangs
+      - id: check-merge-conflict
+      - id: check-yaml
+      - id: end-of-file-fixer
+      - id: forbid-submodules
+  - repo: 'https://github.com/comkieffer/pre-commit-xmllint.git'
+    rev: 1.0.0
+    hooks:
+      - id: xmllint
