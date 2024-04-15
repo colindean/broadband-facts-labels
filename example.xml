@@ -81,6 +81,8 @@
       <upload unit="Mbps">200</upload>
       <latency unit="ms">47</latency>
       <!-- TODO: can we include source and destination data for the ping and throughput tests? -->
+      <limit unit="GB" policy="https://example.com/data-usage">1000</limit>
+      <overage per-unit="GB">1</overage><!-- could be n/a in some cases -->
     </metrics>
   </plan>
 </broadband-facts>
